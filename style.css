@@ -1,0 +1,158 @@
+body{
+    background-color: #121617;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header{
+    background-color: #121617;
+}
+
+.header .navbar-brand a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.header .navbar-brand:hover{
+    color: white;
+}
+
+.header .nav-item .nav-link{
+    color: white;
+}
+
+.header .nav-item .nav-link:hover{
+    color: #7ED957;
+}
+
+.header .nav-item .nav-link.active{
+    background-color: #7ED957;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;	
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.header .navbar-toggler{
+    background-color: white;
+}
+
+section{
+    padding: 60px 0px;
+}
+
+.title{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.title::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: #7ED957;
+    content: '';
+}
+
+.card{
+    background-color: #2e383a4f;
+    color: white;
+}
+
+.card .card-text s{
+    font-size: 14px;
+}
+
+.card .card-text b{
+    color: #7ED957;
+    display: block;
+}
+
+.card .btn-primary{
+    background-color: #7ED957;
+    border-color: #7ED957;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;	
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.text-colored{
+    color: #7ED957;
+}
+
+#produtos .nav{
+    margin-bottom: 40px;
+}
+
+#produtos .nav-link{
+    color: white;
+}
+
+#produtos .nav-link.active{
+    background-color: #7ED957;
+    border-color: #7ED957;
+    font-weight: bold;
+    border-radius: 20px;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#contato .btn{
+    background-color: #7ED957;
+    border-color: #7ED957;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+#contato input, #contato textarea{
+    background-color: #2e383a4f;
+    border-color: #2e383a4f;
+    outline: none;
+    color: white;
+}
+
+#contato input::placeholder{
+    color: white;
+}
+
+#contato textarea{
+    resize: none;
+}
+
+#contato input:focus, #contato textarea:focus{
+    box-shadow: 0 0 0 .25rem #7ED957;
+}
+
+#contato .social-links{
+    list-style: none;
+}
+
+#contato .social-links li i{
+    margin-right: 8px;
+}
+
+@media(max-width:767px){
+    section{
+        padding: 20px 0px;
+    }
+
+    h3{
+        margin: 16px 0px;
+    }
+
+    #contato .social-media{
+        margin-top: 16px;
+    }
+}
